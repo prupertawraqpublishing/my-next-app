@@ -19,8 +19,9 @@ pipeline {
             steps {
                 script {
                     // Use nvm to install and use the specified Node.js version
-                    sh "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash"
-                    sh "source ~/.nvm/nvm.sh && nvm install $NODEJS_VERSION"
+                    // sh "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash"
+                    //  sh "source ~/.nvm/nvm.sh && nvm install $NODEJS_VERSION"
+                    echo "Displaying scripts"
                 }
                 sh "npm install"
             }
