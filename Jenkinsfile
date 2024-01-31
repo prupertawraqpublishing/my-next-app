@@ -4,6 +4,9 @@ pipeline {
         stage('Requirements') {
             steps {
                 echo 'Getting Requirements....'
+                sh 'git --version'
+                git branch: 'main',
+                    url: 'https://github.com/prupertawraqpublishing/my-next-app.git'
             }
         }
         stage('Build') {
