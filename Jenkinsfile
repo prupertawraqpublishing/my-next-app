@@ -31,6 +31,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                echo "Displaying Test"
+               echo 'Current Directory: ' + pwd()
+               sh 'ls -la'
                sh "npm run test"
             }
         }
