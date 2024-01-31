@@ -24,6 +24,7 @@ pipeline {
                     echo "Displaying scripts"
                 }
                 sh "npm install"
+                sh "npm install --save-dev supertest jest"
             }
         }
 
