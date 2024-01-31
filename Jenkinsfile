@@ -40,6 +40,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                echo 'Getting Deploy ....'
                 // Add deployment steps here if needed
             }
         }
